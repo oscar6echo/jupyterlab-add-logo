@@ -1,0 +1,13 @@
+[data-jp-theme-light='false'] #custom-wrapper {
+  background-image: url(./logo/logo-dark.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+
+[data-jp-theme-light='true'] #custom-wrapper {
+  background-image: url(./logo/logo-light.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
