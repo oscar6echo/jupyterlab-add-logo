@@ -1,6 +1,8 @@
 # jupyterlab_add_logo
 
-A frontend extension to add a top right logo
+A frontend extension to add a top right logo.
+
+_NOTE_: As mentionned in this [com/jupyterlab/extension-examples issue](https://github.com/jupyterlab/extension-examples/issues/199), Jupyterlab v4 should provide a placeholder to customization simpler.
 
 ## Overview
 
