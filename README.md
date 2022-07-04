@@ -30,7 +30,12 @@ Replace the following files with your own logo and rebuild:
 To install the extension, execute:
 
 ```bash
+# if/when published
 pip install jupyterlab_add_logo
+
+# else git clone repo and install locally from repo root folder
+jlpm run build:prod
+pip install .
 ```
 
 ## Uninstall
