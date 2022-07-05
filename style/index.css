@@ -1,13 +1,24 @@
-[data-jp-theme-light='false'] #custom-wrapper {
-  background-image: url(./logo/logo-dark.svg);
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: contain;
+#logo-wrapper {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  width: 200px;
+  height: 22px;
+  margin: 3px;
 }
 
-[data-jp-theme-light='true'] #custom-wrapper {
-  background-image: url(./logo/logo-light.svg);
+#logo-custom {
   background-repeat: no-repeat;
   background-position: right center;
   background-size: contain;
+  width: 200px;
+}
+
+[data-jp-theme-light='false'] #logo-custom {
+  background-image: url(./logo/logo-dark.svg);
+}
+
+[data-jp-theme-light='true'] #logo-custom {
+  background-image: url(./logo/logo-light.svg);
 }

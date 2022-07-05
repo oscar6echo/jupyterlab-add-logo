@@ -17,14 +17,16 @@ const sleepUntil = async (f: any, timeoutMs: number): Promise<void> => {
   });
 };
 
-const buildSvgWrapperElt = (): HTMLElement => {
-  const wrapper = document.createElement('div');
-  wrapper.setAttribute('id', 'custom-wrapper');
-  wrapper.setAttribute(
-    'style',
-    'width: 100%; margin: 2px; display: flex; justify-content: end'
-  );
-  return wrapper;
+const buildLogoWrapperElt = (): HTMLElement => {
+  const logoWrapper = document.createElement('div');
+  logoWrapper.setAttribute('id', 'logo-wrapper');
+
+  const logoDiv = document.createElement('div');
+  logoDiv.setAttribute('id', 'logo-custom');
+
+  logoWrapper.appendChild(logoDiv);
+
+  return logoWrapper;
 };
 
 const addLogo = async (): Promise<void> => {
@@ -33,7 +35,7 @@ const addLogo = async (): Promise<void> => {
   try {
     await sleepUntil(() => document.querySelector('#jp-top-panel'), 5000);
 
-    const wrapper = buildSvgWrapperElt();
+    const wrapper = buildLogoWrapperElt();
     document.querySelector('#jp-top-panel')?.appendChild(wrapper);
 
     console.log('added logo to DOM');
